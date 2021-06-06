@@ -8,6 +8,40 @@
     <title>Formulario</title>
 </head>
 <body>
-    
+    <div class="survey">
+        <h1 id="title">ENCUESTA</h1>
+        <p id="description">Encuesta básica de datos de usuario</p>
+        <form action="#" id="survey-form">
+            <label for="name" id="name-label" class="tag">Nombre:</label>
+            <input type="text" id="name" placeholder="Nombre Completo" class="input-form" required></input>
+
+            <label for="email" id="email-label" class="tag">Correo:</label>
+            <input type="email" id="email" placeholder="Su Correo" class="input-form" required></input>
+
+            <label for="number" id="number-label" class="tag">Edad: </label>
+            <input type="number" id="number" placeholder="Su edad" min="1" max="100" class="input-form"></input>
+
+            <label for="dropdown" class="tag">País de origen:</label>
+            <select id="dropdown" class="input-form">
+                <option value="">Seleccione una Opción</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Venezuela">Venezuela</option>
+            </select>
+
+            <label class="tag">Género:</label>
+            <label><input type="radio" name="gender" value="female">Femenino</label>
+            <label><input type="radio" name="gender" value="male">Masculino</label>
+
+            <label class="tag">Intereses:</label>
+            <label class="interest"><input type="checkbox" name="interest" value="proggramming">Programación</label>
+            <label class="interest"><input type="checkbox" name="interest" value="design">Diseño</label>
+            <label class="interest"><input type="checkbox" name="interest" value="design">Análisis de datos</label>
+
+            <label class="tag">Expectativas:</label>
+            <textarea name="expectations" id="expectations" rows="3" class="input-form" placeholder="Escriba aquí sus espectativas"></textarea>
+
+            <button id="submit" type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
